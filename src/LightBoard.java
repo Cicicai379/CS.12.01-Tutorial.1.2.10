@@ -24,7 +24,7 @@ public class LightBoard {
         for(int i = 0; i < lights.length; i++) {
             if (lights[i][col]) cnt++;
         }
-        if(lights[row][col]) {
+        if(!lights[row][col]) {
             if(cnt % 2 == 0) return false;
         } else {
             if(cnt % 3 == 0) return true;
